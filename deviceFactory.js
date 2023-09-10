@@ -29,10 +29,10 @@ module.exports = function deviceFactory(devices, plc, mqtt, config, mqtt_base) {
 	// loop so long until we found an empty spot
 	let index = 1;
 	let new_mqtt_name = mqtt_name;
-	while (devices[new_mqtt_name] !== undefined) {
-		new_mqtt_name = mqtt_name + "-" + index;
-		index++;
-	}
+	// while (devices[new_mqtt_name] !== undefined) {
+	// 	new_mqtt_name = mqtt_name + "-" + index;
+	// 	index++;
+	// }
 
 	// save new values back to config
 	// so it can be processed in the new object
