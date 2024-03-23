@@ -47,7 +47,8 @@ module.exports = class devLight extends device {
 			name: this.name,
 			send_if_off: false,
 			payload_on: "true",
-			payload_off: "false"
+			payload_off: "false",
+			qos: 2
 		};
 
 		if (this.attributes["current_temperature"])

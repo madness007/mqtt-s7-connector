@@ -21,7 +21,8 @@ module.exports = class devSwitch extends device {
 			payload_on: "true",
 			payload_off: "false",
 			state_on: "true",
-			state_off: "false"
+			state_off: "false",
+			qos: 2
 		};
 
 		if (this.attributes["state"]) {

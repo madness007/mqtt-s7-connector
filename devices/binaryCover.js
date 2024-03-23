@@ -27,7 +27,8 @@ module.exports = class devBinaryCover extends device {
 			payload_close: "false",
 			payload_stop: "false",
 			state_open: "true",
-			state_closed: "false"
+			state_closed: "false",
+			qos: 2
 		}
 
 		if (this.attributes["targetPosition"])

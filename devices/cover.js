@@ -49,7 +49,8 @@ module.exports = class devCover extends device {
 			tilt_max: 255,
 			tilt_closed_value: 0,
 			tilt_opened_value: 255,
-			set_position_template: '{{ (position / 100) * 255 }}'
+			set_position_template: '{{ (position / 100) * 255 }}',
+			qos: 2
 		}
 
 

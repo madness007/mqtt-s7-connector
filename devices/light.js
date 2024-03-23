@@ -23,7 +23,8 @@ module.exports = class devLight extends device {
 		let info = {
 			name: this.name,
 			payload_on: "true",
-			payload_off: "false"
+			payload_off: "false",
+			qos: 2
 		};
 
 		if (this.attributes["state"]) {

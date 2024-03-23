@@ -25,6 +25,7 @@ module.exports = class devSensor extends device {
 	send_discover_msg() {
 		let info = {
 			name: this.name,
+			qos: 2
 		};
 
 		if (this.attributes["state"]) {
